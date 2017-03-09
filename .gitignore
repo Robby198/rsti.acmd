@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Assetio.AssetCommander.Web/bin
+/Assetio.AssetCommander.Web/obj/Debug
+*.user
+/Backup
+/packages
