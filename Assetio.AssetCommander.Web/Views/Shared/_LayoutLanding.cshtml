@@ -7,7 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
-    @Styles.Render("~/Content/ej/web/Flat-saffron/ej.web.all.min.css")
+    @Styles.Render("~/Content/ej/web/flat-azure-dark/ej.web.all.min.css")
     @Scripts.Render("~/Scripts/jquery-3.1.1.min.js")
     @Scripts.Render("~/Scripts/jsrender.min.js")
     @Scripts.Render("~/Scripts/ej/ej.web.all.min.js")
@@ -24,26 +24,8 @@
 
 </head>
 <body data-vide-bg="../video/oil-sephia.mp4" data-vide-options="loop: true">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
