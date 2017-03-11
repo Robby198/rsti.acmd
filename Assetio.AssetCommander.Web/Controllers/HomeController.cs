@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assetio.AssetCommander.Web.Logger;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,13 @@ namespace Assetio.AssetCommander.Web.Controllers
     {
         public ActionResult Index()
         {
+#if DEBUG
+            Log.Debug("Debug message");
+            Log.Warn("Warn message");
+            Log.Error("Error message");
+            Log.Info("Info message");
+#endif
+
             return View();
         }
 
